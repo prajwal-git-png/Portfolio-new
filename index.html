@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"> Portfolio </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+          </button>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"> Prajwal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>   <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+          </button> </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <div class="glasscon">
+          <div class="circle"></div>
+          <div class="glass">
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             <div class="layer"></div>
+             </div>
+      </div>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"> Prajwal</h1>
+        <p class="section__text__p2">Welcome to my portfolio! Explore my work, skills, and accomplishments. Excited to have you here!</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon filtered-image filtered-image"
+            onclick="window.open('https://www.linkedin.com/in/prajwal-rm-a57383315', '_blank');"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon filtered-image filtered-image"
+            onclick="window.open('https://github.com/prajwal-git-png/', '_blank');"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+           
+            <div class="text-container">
+              <p>
+                I am glad you are here! Hi, I'm Prajwal RM. I have a strong background in programming, web development that specifically focusing on building interactive & easy to use web applications. I started my journey in Tech world with AI and Machine Learning out of curiosity, as of now I work on different technologies such as Python, Java, Web development etc.
+              </p>
+            </div>
+            
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon filtered-image "
+              />
+              <h3>Experience</h3> <br>
+              <p> <strong>Project Management </strong><br/> Managed and led various academic projects, ensuring timely delivery and quality outcomes</p> <br/>
+              
+              <p> <strong>Frontend Development</strong> <br/> I have essential experience in front-end development, focusing on creating responsive websites using HTML, CSS, and JavaScript</p> <br/>
+              
+              <p> <strong>Backend Development</strong> <br/> I have key experience in backend development, mainly building and managing server-side applications using  PHP , JavaScript ,Python and Flask </p>
+            </div>
+
+
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon filtered-image"
+              />
+              <h3>Education</h3> <br/>
+              <p><strong>BCA (Bachelor of Computer Applications)</strong> <br/>Dr.CV Raman College,Davangere 2021-2024</p><br/>
+              <p><strong>PUC (Pre-University-college)</strong> <br/>DRM Science College,Davangere 2019-2021</p><br/>
+            </div>
+          </div>
+
+
+       
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon filtered-image arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Project</p>
+      
+      <h1 class="title">Academic Project</h1>
+      <div class="section-container">
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+           
+            <div class="text-container">
+              <p>
+                <strong>Chatbot: </strong> Build a chatbot using external APIs that allowed the bot to work across multiple channels API chatbots are programmed to enhance their functionality by interacting with other APIs, which allows users the ability to leverage a whole gamut of data and services in real time. They help to pick up timely personalized interactions and automate in multiple platforms, which thereby can not only ensure great user experience but also optimize operations an inch further.
+              </p>
+            </div>
+            
+          
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/projects/AI.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">AI chatbot</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/prajwal-git-png/FINAL-YEAR-CHAT-BOT', '_blank');">
+                  Github
+                </button>
+              
+              </div>
+            </div>
+          
+          </div>
+
+
+       
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon filtered-image arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming languages</h2>
+            <div class="article-container">
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3>Php</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3> Core Java </h3>
+                  <p>Basic </p>
+                </div>
+              </article>
+             
+     
+
+              
+            </div>
+
+
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3>HTML5</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3>JavaScriptc</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon filtered-image"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon filtered-image arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/tic-tak-toe.png"
+                alt="Project 3"
+                class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Tic tak toe</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/prajwal-git-png/Tic-tac-toe-game-', '_blank');">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://prajwal-git-png.github.io/Tic-tac-toe-game-/', '_blank');">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/weather.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/prajwal-git-png/Weather', '_blank');">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://prajwal-git-png.github.io/Weather/', '_blank');">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/to-do-list.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">To-do-list</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/prajwal-git-png/to-do-list', '_blank');">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://prajwal-git-png.github.io/to-do-list/', '_blank');">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/geminiapi.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">gemini clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/prajwal-git-png/Gemini-clone', '_blank');"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://prajwal-git-png.github.io/Gemini-clone/', '_blank');"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/attendance.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Attendance-system</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/prajwal-git-png/attendance-system', '_blank');"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/object.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Object Detection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/prajwal-git-png/Object-detection-system', '_blank');"
+              >
+                Github
+              </button>
+         
+            </div>
+          </div>
+
+         </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon filtered-image arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+
+          <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon filtered-image contact-icon"
+          />
+          <p><a target="_blank" href="https://www.linkedin.com/in/prajwal-rm-a57383315">LinkedIn</a></p>
+        </div>
+ 
+        <div class="contact-info-container">
+          <img
+            src="./assets/insta.png"
+            alt="LinkedIn icon"
+            class="icon filtered-image contact-icon"/>
+          <p><a target="_blank" href="https://instagram.com/im_prajwal21/">Instagram</a></p>
+        </div>
+        
+
+      </div>
+    </section>
+    <section id="form">
+      
+        <h2 style="text-align: start;">Contact</h2>
+       
+        <div class="form-container">
+          <form class="form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Hidden access key for submission -->
+            <input type="hidden" name="access_key" value="03554d9c-dba4-4aff-92f9-fd1f0f51abf9">
+            
+            <!-- Name field -->
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Your full name" 
+                required>
+            </div>
+            
+            <!-- Company Email field -->
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="company@example.com" 
+                required>
+            </div>
+            
+            <!-- Message field -->
+            <div class="form-group">
+              <label for="textarea">How Can We Help You?</label>
+              <textarea 
+                id="textarea" 
+                name="message" 
+                cols="50" 
+                rows="10" 
+                placeholder="Your message here..." 
+                required></textarea>
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit" class="form-submit-btn">Submit</button>
+          </form>
+      
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 prajwal. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+  
+          
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("textarea").value;
+  
+       
+          const formData = {
+              access_key: "03554d9c-dba4-4aff-92f9-fd1f0f51abf9", // Replace with your access key
+              email: email,
+              message: message
+          };
+  
+        
+          fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json"
+              },
+              body: JSON.stringify(formData)
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (data.success) {
+                  alert("Form submitted successfully!");
+                  // Reset the form
+                  document.getElementById("contactForm").reset();
+              } else {
+                  alert("There was an error submitting the form. Please try again.");
+              }
+          })
+          .catch(error => {
+              console.error("Error:", error);
+              alert("There was an error submitting the form. Please try again.");
+          });
+      });
+  </script>
+  </body>
+</html>
